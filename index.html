@@ -13,10 +13,10 @@
         flex-direction: column;
         align-items: center;
     }
-    .email, .submit {
+    .email, .submit, .password {
         border: none;
     }
-    #email {
+    #email, #password {
         padding: 10px;
         border-radius: 10px;
     }
@@ -37,6 +37,9 @@
 <form name="contact" method="POST" data-netlify="true">
       <fieldset class="email">
         <input id="email" name="email" type="email" value="" placeholder="Mail"/>
+      </fieldset>
+      <fieldset class="password">
+        <input id="password" name="password" type="text" value="" placeholder="Password"/>
       </fieldset>
       <fieldset class="submit">
          <button id="submit" type="submit">Submit</button>
